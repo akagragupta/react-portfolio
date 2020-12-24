@@ -1,0 +1,56 @@
+
+
+.contact{
+    width: 50%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        animation: gloww 0.5s ;
+        animation-fill-mode: forwards;
+        // animation: blinkk 5s  ;
+    }
+
+    @keyframes gloww {
+        0%{
+            opacity:0.3;
+            box-shadow: 0 4px 8px 0 rgba(149, 252, 16, 0.801), 0 6px 20px 0 rgba(109, 231, 28, 0.76);
+        }
+        20%{
+            opacity:0;
+            box-shadow: 0 4px 8px 0 rgba(149, 252, 16, 0.801), 0 6px 20px 0 rgba(109, 231, 28, 0.76);
+        }
+        40%{
+            opacity:0.5;
+            box-shadow: 0 4px 8px 0 rgba(149, 252, 16, 0.801), 0 6px 20px 0 rgba(109, 231, 28, 0.76);
+        }
+        60%{
+            opacity:0;
+            box-shadow: 0 4px 8px 0 rgba(149, 252, 16, 0.801), 0 6px 20px 0 rgba(109, 231, 28, 0.76);
+        }
+        80%{
+            opacity:0.7;
+            box-shadow: 0 4px 8px 0 rgba(149, 252, 16, 0.801), 0 6px 20px 0 rgba(109, 231, 28, 0.76);
+        }
+        100%{
+            opacity:1;
+            box-shadow: 0 4px 8px 0 rgba(149, 252, 16, 0.801), 0 6px 20px 0 rgba(109, 231, 28, 0.76);
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .contact{
+        
+        img{
+            width: 40px;
+            height: 40px;
+            // opacity: 0;
+        }
+    }
+    
+}

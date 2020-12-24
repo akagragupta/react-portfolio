@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.App{
+    min-height: 100vh;
+    width: auto;
+    background-image: url("../img/matrix.gif");
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content:space-around;
+    transform: translateX(-10%);
+    background-color: transparent;
+    transition: all 0.7s ease;
+}
+
+.activate-container{
+    transform: translateX(0%);
+}
+.navbutton{
+    position: absolute;
+    z-index: 11;
+    width: 90px;
+    min-height: 40px;
+    right:70px;
+    top:70px;
+    background-color: transparent;
+    border: solid 2px rgb(85, 250, 20);
+    color:rgb(85, 250, 20);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 4px 0 rgba(149, 252, 16, 0.801), 0 4px 4px 0 rgba(109, 231, 28, 0.76);
+}
+
+.navbutton:hover{
+    color :black;
+    background-color: rgb(85, 250, 20);
+    border: solid 2px rgb(85, 250, 20);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbutton{
+        position: absolute;
+        z-index: 11;
+        width: 70px;
+        min-height: 30px;
+        right:40px;
+        top:40px;
+    }
+
+    .container{
+        width: 100%;
+        height: auto;
+        // transform: translateX(0%) !important;
+    }
+}
+@import './aboutme';
+@import './nav';
+@import './projects';
+@import './contact';

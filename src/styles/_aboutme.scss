@@ -1,0 +1,60 @@
+.aboutme{
+    width:40%;
+    height: auto;
+    background-color: black;
+    p{
+        color:rgb(66, 223, 5);
+        font-size: 20px;
+        font-family: 'Orbitron', sans-serif;
+        animation: glow 0.5s ;
+        text-shadow: 2px 2px 4px #d1e9b7;
+        // width:500px;
+        // min-height: 150px;
+    }
+
+    @keyframes glow {
+        0%{
+            opacity:0.3;
+            text-shadow: 2px 2px 2px #d1e9b7;
+        }
+        20%{
+            opacity:0;
+            text-shadow: none;
+        }
+        40%{
+            opacity:0.5;
+            text-shadow: 2px 2px 4px #d1e9b7;
+        }
+        60%{
+            opacity:0;
+            text-shadow: none;
+        }
+        80%{
+            opacity:0.7;
+            text-shadow: 2px 2px 4px #d1e9b7;
+        }
+        100%{
+            opacity:1;
+            text-shadow: 2px 2px 5px #d1e9b7;
+        }
+    }
+
+
+}
+.components{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content:space-around;
+    // transform: translateX(-10%);
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutme{
+        p{
+            font-size:10px;
+        }
+    }
+}
