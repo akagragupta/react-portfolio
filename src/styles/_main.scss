@@ -20,7 +20,7 @@ img{
   .txt {
     color: #ffffff;
     background:#000000;
-    font-size:200px;
+    font-size:170px;
     font-weight: bold;
     font-family: Arial;
     text-transform: uppercase;
@@ -62,5 +62,25 @@ img{
 @keyframes dodge-area {
     to {
         transform: translate(50%,50%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .txt {
+        color: #ffffff;
+        background:#000000;
+        font-size:80px;
+        font-weight: bold;
+        font-family: Arial;
+        text-transform: uppercase;
+    }
+    .gradient{
+        background: linear-gradient(114.5793141156962deg, rgb(47, 250, 6) 4.927083333333334%,rgb(255, 255, 255) 97.84374999999999%);
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height:100%;
+        mix-blend-mode: multiply;
     }
 }
