@@ -9,7 +9,7 @@ const Projects=()=>{
     // var bliss= require('../img/bliss.jpg');
     return (
         
-        <div className="proj scrollcol">
+        <div className="proj scrollcol scroller">
             <div className="page">
                 <a href="https://blissmusic.netlify.app" rel="noreferrer" target="_blank"><img src={bliss} alt="this is not loading"/></a>
                 <div className="heading"><h3>This is a music app made using react. Go ahead and check it out</h3></div>

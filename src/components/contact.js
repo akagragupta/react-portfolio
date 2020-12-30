@@ -6,7 +6,7 @@ const Contact=()=>{
     return (
         // <div>
             <div className="contact">
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src={mail} alt=""/></a> 
+                <a href="mailto:akagragupta@gmail.com"><img src={mail} alt=""/></a> 
                 <a href="https://www.linkedin.com/in/akagra-gupta/"><img src={linkedln
                 } alt=""/></a>
                 <a href="https://twitter.com/akagra_gupta"><img src={twitter} alt=""/></a>

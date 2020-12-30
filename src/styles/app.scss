@@ -7,6 +7,8 @@
     min-height: 100vh;
     width: auto;
     background-image: url("../img/matrix.gif");
+    // background-image: url("https://i.pinimg.com/originals/db/1e/bf/db1ebfa738f3fc7431fd007b5c8cc4b0.jpg");
+    // background-repeat: no-repeat;
   }
 
 .container{
@@ -64,3 +66,4 @@
 @import './nav';
 @import './projects';
 @import './contact';
+@import './main';

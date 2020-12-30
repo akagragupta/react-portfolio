@@ -3,6 +3,7 @@ import Aboutme from "./components/aboutme";
 import Nav from './components/nav';
 import Projects from './components/projects';
 import Contact from './components/contact';
+import Main from './components/main'
 import './styles/app.scss';
 import {BrowserRouter as Router,  Route} from 'react-router-dom';
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/aboutme" component={Aboutme}  />
         <Route path="/project" component={Projects} />
         <Route path="/contact" component={Contact} />
+        <Route path="/" exact component={Main} />
         {/* <Aboutme /> */}
       </div>
       

@@ -15,7 +15,7 @@
         font-size: 20px;
         font-family: 'Orbitron', sans-serif;
         animation: glow 0.5s ;
-        text-shadow: 2px 2px 4px #d1e9b7;
+        // text-shadow: 2px 2px 8px #d1e9b7;
     }
 
     @keyframes glow {
@@ -84,6 +84,14 @@
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #67e62d; 
+  } 
+
+  .scroller {
+    width: 50%;
+    height: auto;
+    overflow-y: scroll;
+    scrollbar-color: transparent rgba(255, 0, 0, 0);
+    scrollbar-width: thin;
   }
 
 @media only screen and (max-width: 600px) {
@@ -97,11 +105,12 @@
             height: 60px;
         }
         h3{
-            font-size: 10px;;
+            font-size: 12px;;
         }
     }
     .proj{
-        width: 65% !important;
+        width: 60% !important;
+        min-height: 100vh;
     }
     
 }
